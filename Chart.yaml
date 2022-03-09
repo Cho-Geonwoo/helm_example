@@ -1,0 +1,9 @@
+apiVersion: v1
+name: test-charts
+version: 0.0.1
+dependencies:
+- name: argo-cd
+  version: ">=1.8.0"
+  repository: https://argoproj.github.io/argo-helm
+  condition: argo.enabled
+  
