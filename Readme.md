@@ -8,4 +8,8 @@
 
 ### helm chart delete
 
-`helm delete test`
+`helm uninstall test`
+
+### helm chart rollback
+
+`helm rollback --namespace <namespace> <Release> <rollback to REVISION>`
